@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Essi Ballogou — Data Scientist</title>
+  <meta name="description" content="Portfolio Data Analyst / Data Scientist — projets, compétences et expériences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Syne:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- NAVBAR -->
+  <header class="header" id="top">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="#top">EB<span class="brand-dot">.</span></a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
+        aria-controls="nav-menu">
+        <span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#experiences">Expériences</a></li>
+          <li><a href="#divers">Divers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-outline nav-cta" href="assets/cv_Essi.pdf" download>CV</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ======== HERO ======== -->
+    <section class="hero" id="accueil">
+      <div class="container hero-container">
+        <div class="hero-left">
+          <div class="hero-pills reveal">
+            <span class="pill">Data Analyst</span>
+            <span class="pill pill-alt">Data Scientist</span>
+            <span class="pill">IA · LLM · MLOps</span>
+          </div>
+
+          <h1 class="hero-title reveal">
+            <span class="hero-title-line">Bonjour,</span>
+            <span class="hero-title-line hero-name"><span id="hero-typewriter"></span></span>
+          </h1>
+
+          <p class="hero-desc reveal">
+            Data Analyst chez <strong>AXA France</strong> ; je transforme la donnée en décision.
+            Double profil data scientist &amp; économiste; mon ambition est
+            d'utiliser les données pour résoudre des problématiques réelles et opérationnelles.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#projets">Mes projets</a>
+            <a class="btn btn-outline" href="assets/cv_Essi.pdf" download>Télécharger le CV</a>
+          </div>
+
+          <div class="hero-socials reveal">
+            <a class="social-link" href="https://github.com/ballogou-essi" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" width="16" height="16">
+                <path fill="currentColor"
+                  d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.53.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.88.12 3.18.76.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .5Z" />
+              </svg>
+              GitHub
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/in/essi-ballogou" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" width="16" height="16">
+                <path fill="currentColor"
+                  d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3 9h4v12H3V9Zm7 0h3.8v1.64h.05C14.4 9.6 15.7 8.8 17.6 8.8 21 8.8 21.6 11 21.6 13.9V21h-4v-6.27c0-1.5 0-3.43-2.09-3.43-2.1 0-2.42 1.63-2.42 3.32V21H10V9Z" />
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right reveal">
+          <div class="photo-wrap">
+            <img src="assets/essi4.jpeg" alt="Essi Ballogou" class="avatar" loading="eager" />
+            <div class="photo-accent"></div>
+          </div>
+          <div class="skill-cloud">
+            <!-- Data & Prog -->
+            <span class="sk sk-1">Python</span>
+            <span class="sk sk-2">PySpark</span>
+            <span class="sk sk-1">SQL</span>
+            <span class="sk sk-3">R</span>
+            <span class="sk sk-4">SAS</span>
+
+            <!-- BI & Outils -->
+            <span class="sk sk-3">Power BI</span>
+            <span class="sk sk-2">DAX</span>
+            <span class="sk sk-4">Power Apps</span>
+            <span class="sk sk-1">Power Automate</span>
+            <span class="sk sk-3">Azure Databricks</span>
+            <span class="sk sk-2">Docker</span>
+            <span class="sk sk-4">Git</span>
+
+            <!-- ML / IA -->
+            <span class="sk sk-1">Machine Learning</span>
+            <span class="sk sk-3">Deep Learning</span>
+            <span class="sk sk-2">Reinforcement Learning</span>
+            <span class="sk sk-4">Scikit-learn</span>
+            <span class="sk sk-1">XGBoost</span>
+            <span class="sk sk-3">LLM / RAG</span>
+            <span class="sk sk-2">FAISS</span>
+            <span class="sk sk-4">Pandas</span>
+
+            <!-- Méthodes -->
+            <span class="sk sk-1">Économétrie</span>
+            <span class="sk sk-3">Statistiques</span>
+          </div>
+          <div class="hero-scroll-hint" aria-hidden="true">
+            <span></span>
+            <span class="scroll-line"></span>
+          </div>
+    </section>
+
+    <!-- ======== À PROPOS ======== -->
+    <section class="section" id="apropos">
+      <div class="container">
+        <div class="about-wrap reveal">
+          <div class="about-label">À propos</div>
+          <div class="about-content">
+            <p class="about-lead">
+              Ma double casquette <strong>data scientist</strong> et <strong>économiste</strong> me donne une vision à
+              la fois technique et métier de la donnée.
+            </p>
+            <p class="about-body">
+              Au quotidien, chez <strong>AXA France</strong>, je pars du besoin métier pour traiter des données,
+              construire des indicateurs de pilotage et automatiser des processus via <strong>PySpark</strong>,
+              <strong>Power BI</strong> et <strong>Power Apps</strong>.
+            </p>
+            <p class="about-body">
+              En parallèle, je mène des projets personnels de bout en bout — de la compréhension du problème à la mise
+              en production d'une solution concrète.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PROJETS ======== -->
+    <section class="section" id="projets">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Projets</span>
+          <h2 class="section-title">Explorer, apprendre<br>et créer avec la data.</h2>
+        </div>
+      </div>
+
+      <!-- Carrousel -->
+      <div class="carousel-wrap">
+        <div class="carousel" id="projects-track">
+
+          <article class="proj-card proj-featured reveal" data-modal="p1">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--purple">
+                <svg viewBox="0 0 24 24" width="28" height="28">
+                  <path fill="currentColor"
+                    d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2Zm1 15h-2v-2h2v2Zm0-4h-2V7h2v6Z" />
+                </svg>
+              </div>
+              <div class="proj-badges-wrap">
+                <span class="proj-badge">Hackathon 2026</span>
+              </div>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Détection d'anomalies grâce à l'IA : Souscription assurance</h3>
+              <p class="proj-desc">Outil d'aide à la décision via LLM Mistral AI. Analyse PDF/JSON, statut
+                OK/REVIEW/FLAGGED, score de risque 0–100, export PDF. Interface Flask.</p>
+              <div class="proj-tags">
+                <span class="tag">Python</span><span class="tag">Mistral AI</span><span class="tag">Flask</span><span
+                  class="tag">LLM</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link"
+                href="https://github.com/ballogou-essi/Insurance-anomaly-detector---MISTRAL-AI-HACKATHON-2026"
+                target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a class="proj-link" href="https://youtu.be/XMHz59fp5-I?si=ZsLREIBCfXg-yI-f" target="_blank"
+                rel="noreferrer">Démo ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p1">Détails</button>
+            </div>
+          </article>
+
+          <article class="proj-card reveal" data-modal="p5">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--gold">
+                <svg viewBox="0 0 24 24" width="28" height="28">
+                  <path fill="currentColor" d="M12 3a9 9 0 1 0 0 18A9 9 0 0 0 12 3Zm1 13h-2v-5h2v5Zm0-7h-2V7h2v2Z" />
+                </svg>
+              </div>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Moteur de recherche RAG local</h3>
+              <p class="proj-desc">Pipeline RAG complet : embeddings HuggingFace, indexation FAISS, génération Mistral
+                7B. 7 852 chunks sur 5 183 abstracts scientifiques.</p>
+              <div class="proj-tags">
+                <span class="tag">Python</span><span class="tag">FAISS</span><span class="tag">HuggingFace</span><span
+                  class="tag">Ollama</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://github.com/ballogou-essi" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p5">Détails</button>
+            </div>
+          </article>
+
+          <article class="proj-card reveal" data-modal="p2">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--teal">
+                <svg viewBox="0 0 24 24" width="28" height="28">
+                  <path fill="currentColor"
+                    d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2ZM8.5 13.5l2.5 3 3.5-4.5 4.5 6H5l3.5-4.5Z" />
+                </svg>
+              </div>
+              <span class="proj-badge proj-badge--green">96.5% précision</span>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Classification d'images satellitaires</h3>
+              <p class="proj-desc">Comparaison LeNet, ResNet18, EfficientNet-B0 sur EuroSAT. ResNet18 retenu : 96,5% de
+                précision sur l'occupation des sols.</p>
+              <div class="proj-tags">
+                <span class="tag">Python</span><span class="tag">Deep Learning</span><span class="tag">ResNet18</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://github.com/ballogou-essi/Land-Use-Classification." target="_blank"
+                rel="noreferrer">GitHub ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p2">Détails</button>
+            </div>
+          </article>
+
+          <article class="proj-card reveal" data-modal="p3">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--coral">
+                <svg viewBox="0 0 24 24" width="28" height="28">
+                  <path fill="currentColor" d="M3.5 18.5 9 13l4 4 7.5-8.5M21 21H3V3" />
+                </svg>
+              </div>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Recommandation films — MovieLens 25M</h3>
+              <p class="proj-desc">CF item-based, user-based et SVD sur 25M d'interactions. Sparsité 99,93%.
+                Visualisation espace latent UMAP.</p>
+              <div class="proj-tags">
+                <span class="tag">Python</span><span class="tag">SVD</span><span class="tag">UMAP</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://github.com/ballogou-essi/Movie-Recommendations" target="_blank"
+                rel="noreferrer">GitHub ↗</a>
+              <a class="proj-link" href="https://ballogou-essi.github.io/Movie-Recommendations/" target="_blank"
+                rel="noreferrer">Page projet ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p3">Détails</button>
+            </div>
+          </article>
+
+          <article class="proj-card reveal" data-modal="p4">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--purple">
+                <svg viewBox="0 0 24 24" width="28" height="28">
+                  <path fill="currentColor"
+                    d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                </svg>
+              </div>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Prédiction du churn — Abonnés muséaux</h3>
+              <p class="proj-desc">Comparaison de classifieurs, analyse coût-bénéfice et identification du ciblage le
+                plus rentable pour les campagnes de rétention.</p>
+              <div class="proj-tags">
+                <span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">Scikit-learn</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://github.com/ballogou-essi" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p4">Détails</button>
+            </div>
+          </article>
+
+          <article class="proj-card reveal" data-modal="p6">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--gold">
+                <svg viewBox="0 0 24 24" width="28" height="28">
+                  <path fill="currentColor"
+                    d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                </svg>
+              </div>
+              <span class="proj-badge">+8% marge</span>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Optimisation de la marge — Retail</h3>
+              <p class="proj-desc">Données transactionnelles e-commerce, segmentation RFM, simulation de scénarios.
+                Levier : réduction des retours pour +8% de marge.</p>
+              <div class="proj-tags">
+                <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">RFM</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://github.com/ballogou-essi/Optimisation-marketing" target="_blank"
+                rel="noreferrer">GitHub ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p6">Détails</button>
+            </div>
+          </article>
+
+          <article class="proj-card reveal" data-modal="p7">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--teal">
+                <svg viewBox="0 0 24 24" width="28" height="28">
+                  <path fill="currentColor"
+                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+                </svg>
+              </div>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Dashboard Power BI — Ventes Pizzeria</h3>
+              <p class="proj-desc">CA, variation MoM, top 5 produits, répartition par catégorie. Mesures DAX, filtrage
+                dynamique, comparaison N/N-1.</p>
+              <div class="proj-tags">
+                <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">SQL</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://github.com/ballogou-essi/Analyse-des-Ventes-de-Pizzas-avec-Power-BI"
+                target="_blank" rel="noreferrer">GitHub ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p7">Détails</button>
+            </div>
+          </article>
+
+          <article class="proj-card reveal" data-modal="p8">
+            <div class="proj-top">
+              <div class="proj-icon proj-icon--coral">
+                <svg viewBox="0 0 24 24" width="28" height="28">
+                  <path fill="currentColor"
+                    d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" />
+                </svg>
+              </div>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-title">Tarifs aériens — Étude économétrique</h3>
+              <p class="proj-desc">4 596 observations US DOT 1997–2000. Régressions à effets fixes. Part de marché
+                élevée associée à des tarifs plus élevés.</p>
+              <div class="proj-tags">
+                <span class="tag">R</span><span class="tag">Économétrie</span><span class="tag">dplyr</span>
+              </div>
+            </div>
+            <div class="proj-footer">
+              <a class="proj-link" href="https://github.com/ballogou-essi/Part-de-marche-et-fixation-des-tarifs-aeriens"
+                target="_blank" rel="noreferrer">GitHub ↗</a>
+              <button class="btn btn-sm" type="button" data-modal="p8">Détails</button>
+            </div>
+          </article>
+
+        </div><!-- /carousel -->
+
+        <div class="carousel-nav">
+          <button class="carousel-btn" id="track-prev" aria-label="Précédent">←</button>
+          <div class="carousel-dots" id="track-dots"></div>
+          <button class="carousel-btn" id="track-next" aria-label="Suivant">→</button>
+        </div>
+      </div>
+
+      <!-- Autres projets -->
+      <div class="container">
+        <div class="voir-plus-wrap reveal">
+          <button class="voir-plus-btn" id="voir-plus-btn" type="button">
+            <span id="voir-plus-label">Voir tous les projets</span>
+            <svg id="voir-plus-icon" viewBox="0 0 24 24" width="14" height="14">
+              <path fill="currentColor" d="M12 16l-6-6h12z" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="projects-more hidden" id="projects-more">
+          <div class="mini-grid">
+            <article class="mini-card reveal">
+              <h4 class="mini-title">Ventes et stocks — Pizzeria SQL/Python</h4>
+              <div class="mini-tags"><span class="tag">SQL</span><span class="tag">Python</span><span
+                  class="tag">SQLite</span></div>
+              <a class="proj-link" href="https://github.com/ballogou-essi/Analyse-des-Ventes-de-Pizzas-avec-Power-BI"
+                target="_blank" rel="noreferrer">GitHub ↗</a>
+            </article>
+            <article class="mini-card reveal">
+              <h4 class="mini-title">Base de données aéroportuaire — ATL</h4>
+              <div class="mini-tags"><span class="tag">SQL</span><span class="tag">SQLite</span></div>
+              <a class="proj-link" href="https://github.com/ballogou-essi/SQL-Base-de-donnee-de-ATL" target="_blank"
+                rel="noreferrer">GitHub ↗</a>
+            </article>
+            <article class="mini-card reveal">
+              <h4 class="mini-title">Déterminants du salaire — SAS/Python</h4>
+              <div class="mini-tags"><span class="tag">SAS</span><span class="tag">Python</span><span
+                  class="tag">Économétrie</span></div>
+              <a class="proj-link" href="https://github.com/ballogou-essi/Activite-des-menages-en-France-sous-SAS"
+                target="_blank" rel="noreferrer">GitHub ↗</a>
+            </article>
+            <article class="mini-card reveal">
+              <h4 class="mini-title">Web scraping MyAnimeList — R</h4>
+              <div class="mini-tags"><span class="tag">R</span><span class="tag">rvest</span><span
+                  class="tag">ggplot2</span></div>
+              <a class="proj-link" href="https://github.com/ballogou-essi/Projet-R-Web-Scraping" target="_blank"
+                rel="noreferrer">GitHub ↗</a>
+            </article>
+            <article class="mini-card reveal">
+              <h4 class="mini-title">Site vitrine multimédia — Agakpe</h4>
+              <div class="mini-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                  class="tag">JS</span></div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                <a class="proj-link" href="https://github.com/ballogou-essi/Site-web-multimedia-agakpe" target="_blank"
+                  rel="noreferrer">GitHub ↗</a>
+                <a class="proj-link proj-link--accent" href="https://site-web-multimedia-agakpe.vercel.app/"
+                  target="_blank" rel="noreferrer">Démo ↗</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== EXPÉRIENCES ======== -->
+    <section class="section" id="experiences">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Expériences</span>
+          <h2 class="section-title">Parcours.</h2>
+        </div>
+
+        <div class="xp-list">
+          <article class="xp-card reveal">
+            <div class="xp-left">
+              <div class="xp-logo">AXA</div>
+              <div class="xp-connector"></div>
+            </div>
+            <div class="xp-right">
+              <div class="xp-head">
+                <div>
+                  <h3 class="xp-company">AXA France <span class="badge-cac">CAC 40</span></h3>
+                  <p class="xp-role">Data Analyst — Pilotage économique des Agents</p>
+                  <p class="xp-meta">Strasbourg · Sept. 2025 – Présent <span class="badge-alt">Alternance</span></p>
+                </div>
+              </div>
+              <ul class="xp-list-items">
+                <li>Migration <strong>SAS → PySpark</strong> sur Azure Databricks, réduction des temps de traitement.
+                </li>
+                <li>Tableaux de bord <strong>Power BI</strong> et KPI pour le pilotage des agents généraux.</li>
+                <li>Outil de gestion des dérogations avec <strong>Power Apps + Power Automate</strong> : centralisation,
+                  validation, suivi.</li>
+                <li>Contrôles qualité <strong>Python/Excel</strong> pour garantir l'intégrité des données multi-sources.
+                </li>
+              </ul>
+              <div class="xp-chips">
+                <span class="tag">Python</span><span class="tag">PySpark</span><span class="tag">SQL</span><span
+                  class="tag">Power BI</span><span class="tag">Azure Databricks</span><span class="tag">Power
+                  Apps</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="xp-card reveal">
+            <div class="xp-left">
+              <div class="xp-logo xp-logo--sm">🍕</div>
+            </div>
+            <div class="xp-right">
+              <div class="xp-head">
+                <div>
+                  <h3 class="xp-company">Pizza Maestro</h3>
+                  <p class="xp-role">Employée polyvalente</p>
+                  <p class="xp-meta">Clermont-Ferrand · 2024 – 2025 <span class="badge-alt">CDI</span></p>
+                </div>
+              </div>
+              <ul class="xp-list-items">
+                <li>Gestion des commandes et coordination avec l'équipe en période d'affluence.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== DIVERS ======== -->
+    <section class="section" id="divers">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Divers</span>
+          <h2 class="section-title">En dehors du travail.</h2>
+        </div>
+        <div class="divers-grid">
+          <div class="divers-card reveal">
+            <div class="divers-icon">♪</div>
+            <h3 class="divers-title">Musique</h3>
+            <p class="divers-desc">Mezzo-soprano dans une chorale. La musique m'apprend l'écoute et l'harmonie
+              d'ensemble.</p>
+          </div>
+          <div class="divers-card reveal">
+            <div class="divers-icon">✈</div>
+            <h3 class="divers-title">Voyages</h3>
+            <p class="divers-desc">Voyageuse curieuse. Chaque destination est une nouvelle façon de voir le monde.</p>
+          </div>
+          <div class="divers-card reveal">
+            <div class="divers-icon">◎</div>
+            <h3 class="divers-title">Lecture</h3>
+            <p class="divers-desc">Romans, manga, articles scientifiques. J'aime les histoires sous toutes leurs formes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-label">Contact</span>
+          <h2 class="section-title">Parlons-nous.</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <p class="contact-label">Email</p>
+            <a class="contact-email" href="mailto:ballogouessi@gmail.com">ballogouessi@gmail.com</a>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:ballogouessi@gmail.com">M'écrire</a>
+              <button class="btn btn-outline" type="button" id="copy-email"
+                data-email="ballogouessi@gmail.com">Copier</button>
+            </div>
+            <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+          </div>
+          <div class="contact-card reveal">
+            <p class="contact-label">Liens</p>
+            <a class="contact-link-item" href="https://github.com/ballogou-essi" target="_blank" rel="noreferrer">
+              <span class="contact-link-name">GitHub</span>
+              <span class="contact-link-url">github.com/ballogou-essi ↗</span>
+            </a>
+            <a class="contact-link-item" href="https://www.linkedin.com/in/essi-ballogou" target="_blank"
+              rel="noreferrer">
+              <span class="contact-link-name">LinkedIn</span>
+              <span class="contact-link-url">linkedin.com/in/essi-ballogou ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <p>© <span id="year"></span> BALLOGOU Essi Carole Claudia</p>
+      <a href="#top" class="footer-back">Haut de page ↑</a>
+    </footer>
+
+  </main>
+
+  <!-- MODALS -->
+  <dialog class="modal" id="modal-p1">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Détection d'anomalies — Souscription assurance</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Outil d'aide à la décision pour l'analyse de dossiers de souscription assurance. Analyse de
+        documents hétérogènes (PDF, TXT, JSON) via LLM Mistral AI. Sortie structurée : statut OK/REVIEW/FLAGGED, score
+        de risque 0-100, alertes, action recommandée. Interface Flask, export PDF. Hackathon Mistral AI 2026.</p>
+      <div class="modal-tags"><span class="tag">Python</span><span class="tag">Mistral AI</span><span
+          class="tag">Flask</span><span class="tag">LLM</span></div>
+      <div class="modal-actions">
+        <a class="btn btn-outline"
+          href="https://github.com/ballogou-essi/Insurance-anomaly-detector---MISTRAL-AI-HACKATHON-2026" target="_blank"
+          rel="noreferrer">GitHub</a>
+        <a class="btn btn-outline" href="https://youtu.be/XMHz59fp5-I?si=ZsLREIBCfXg-yI-f" target="_blank"
+          rel="noreferrer">Demo vidéo</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-p2">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Classification d'images satellitaires</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Pipeline deep learning pour la classification de l'occupation des sols sur EuroSAT.
+        Prétraitement, augmentation, comparaison LeNet / ResNet18 / EfficientNet-B0. ResNet18 retenu : 96,5% de
+        précision.</p>
+      <div class="modal-tags"><span class="tag">Python</span><span class="tag">Deep Learning</span><span
+          class="tag">ResNet18</span><span class="tag">EuroSAT</span></div>
+      <div class="modal-actions">
+        <a class="btn btn-outline" href="https://github.com/ballogou-essi/Land-Use-Classification." target="_blank"
+          rel="noreferrer">GitHub</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-p3">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Recommandation de films — MovieLens 25M</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Comparaison CF item-based, user-based et SVD (k=50) sur 25M d'interactions. Sparsité 99,93%.
+        Visualisation espace latent UMAP. Analyse des biais de popularité et limites en régime sparse.</p>
+      <div class="modal-tags"><span class="tag">Python</span><span class="tag">SVD</span><span
+          class="tag">UMAP</span><span class="tag">SciPy</span></div>
+      <div class="modal-actions">
+        <a class="btn btn-outline" href="https://github.com/ballogou-essi/Movie-Recommendations" target="_blank"
+          rel="noreferrer">GitHub</a>
+        <a class="btn btn-outline" href="https://ballogou-essi.github.io/Movie-Recommendations/" target="_blank"
+          rel="noreferrer">Page projet</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-p4">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Prédiction du churn — Abonnés muséaux</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Modélisation du churn pour anticiper les résiliations. Comparaison Random Forest, XGBoost et
+        autres classifieurs. Analyse coût-bénéfice et ciblage optimal pour les campagnes de rétention.</p>
+      <div class="modal-tags"><span class="tag">Python</span><span class="tag">XGBoost</span><span
+          class="tag">Scikit-learn</span></div>
+      <div class="modal-actions">
+        <a class="btn btn-outline" href="https://github.com/ballogou-essi" target="_blank" rel="noreferrer">GitHub</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-p5">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Moteur RAG local</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Système question-réponse sur corpus scientifique. Pipeline : ingestion, chunking, embeddings
+        HuggingFace, indexation FAISS, génération Mistral 7B via Ollama. 7 852 chunks issus de 5 183 abstracts.
+        Interface web HTML/CSS/JS.</p>
+      <div class="modal-tags"><span class="tag">Python</span><span class="tag">FAISS</span><span
+          class="tag">HuggingFace</span><span class="tag">Mistral 7B</span><span class="tag">RAG</span></div>
+      <div class="modal-actions">
+        <a class="btn btn-outline" href="https://github.com/ballogou-essi" target="_blank" rel="noreferrer">GitHub</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-p6">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Optimisation de la marge — Retail</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Données transactionnelles e-commerce. Nettoyage, calcul CA et marge, segmentation RFM.
+        Réduction 50% des retours = +4,6% de marge. Objectif +8% atteignable sans modifier le volume.</p>
+      <div class="modal-tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">RFM</span>
+      </div>
+      <div class="modal-actions">
+        <a class="btn btn-outline" href="https://github.com/ballogou-essi/Optimisation-marketing" target="_blank"
+          rel="noreferrer">GitHub</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-p7">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Dashboard Power BI — Ventes Pizzeria</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">Tableau de bord interactif sur les ventes 2015. CA, variation MoM, top 5 pizzas, répartition
+        par catégorie. Mesures DAX, filtrage dynamique, comparaison N/N-1.</p>
+      <div class="modal-tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">SQL</span>
+      </div>
+      <div class="modal-actions">
+        <a class="btn btn-outline" href="https://github.com/ballogou-essi/Analyse-des-Ventes-de-Pizzas-avec-Power-BI"
+          target="_blank" rel="noreferrer">GitHub</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="modal-p8">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <h3 class="modal-title">Tarifs aériens — Étude économétrique</h3>
+        <button class="modal-close" type="button" data-close aria-label="Fermer">✕</button>
+      </div>
+      <p class="modal-text">4 596 observations US DOT 1997-2000. Régressions à effets fixes. Part de marché élevée
+        associée à tarifs plus élevés, effets non linéaires de la distance, économies d'échelle sur routes à fort
+        trafic.</p>
+      <div class="modal-tags"><span class="tag">R</span><span class="tag">dplyr</span><span
+          class="tag">stargazer</span><span class="tag">Effets fixes</span></div>
+      <div class="modal-actions">
+        <a class="btn btn-outline" href="https://github.com/ballogou-essi/Part-de-marche-et-fixation-des-tarifs-aeriens"
+          target="_blank" rel="noreferrer">GitHub</a>
+        <button class="btn btn-primary" type="button" data-close>Fermer</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
